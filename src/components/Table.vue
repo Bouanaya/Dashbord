@@ -30,7 +30,7 @@
               <td class="text-left font-semibold">
                 {{ Table.price }}
               </td>
-              <td class="font-semibold text-green-600">
+              <td class="font-semibold text-primary-600 ">
                 {{ Table.change }}
               </td>
               <td class="font-semibold">
@@ -45,7 +45,9 @@
       </div>
 </template>
 <script lang="ts" setup>
+import { color } from "chart.js/helpers";
 import Star from "../Icons/Star.vue";
+import type { TabPanelEmits } from "primevue/tabpanel";
 
  const dataTables = [
   {
@@ -55,12 +57,14 @@ import Star from "../Icons/Star.vue";
     change: "+13.38%",
     MarketCap: "$399.8M",
     icon: "B",
+
+    
   },
   {
     Name: "VenChen",
     product: "LAMO",
     price: "$2.42",
-    change: "+13.38%",
+    change: "-9.33%",
     MarketCap: "$399.8M",
     icon: "V",
   },

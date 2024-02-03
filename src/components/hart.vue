@@ -1,6 +1,6 @@
 
 <template>
-    <div class="card absolute  top-6 w-full px-2">
+    <div class="card absolute  top-6 w-full px-3">
         <Chart type="line" :data="chartData" :options="chartOptions" class="h-30rem" />
     </div>
 </template>
@@ -18,23 +18,25 @@ onMounted(() => {
 
 const chartData = ref();
 const chartOptions = ref();
+const ab = ref(20)
         
 const setChartData = () => {
     const documentStyle = getComputedStyle(document.documentElement);
 
     return {
+    
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
             {
                 label: 'First Dataset',
-                data: [65, 59, 80, 81, 56, 55, 40],
+                data: [65, 59, 80, 80, 56, ab.value , 40],
                 fill: false,
                 borderColor: documentStyle.getPropertyValue('--cyan-500'),
                 tension: 0.4
             },
             {
                 label: 'Second Dataset',
-                data: [28, 48, 40, 19, 86, 27, 90],
+                data: [28, 48, 200, 19, 86, 27, 50],
                 fill: false,
                 borderColor: documentStyle.getPropertyValue('--gray-500'),
                 tension: 0.4

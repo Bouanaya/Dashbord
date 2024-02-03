@@ -1,5 +1,5 @@
  <template>
-  <div class="bg-B w-screen h-screen flex">
+  <div class="bg-B w-screen h-screen flex fixed">
   <Aside></Aside>
   <div class=" w-full h-full overflow-hidden p-3  ">
     <div class="bg-white h-full rounded-[20px] px-12 py-6">
@@ -9,6 +9,7 @@
     <slot>
       <router-view></router-view>
     </slot>
+    
   </div>
   </div>
 </div>
@@ -19,7 +20,6 @@
  <script setup lang="ts">
  import Aside from '@/components/Aside.vue';
  import Header from '@/components/Header.vue';
- import Calendar from 'primevue/calendar';
  </script>
  
  <style lang="scss" scoped>

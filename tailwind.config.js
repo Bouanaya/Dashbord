@@ -30,6 +30,9 @@ export default {
           "surface-800": "rgb(var(--surface-800))",
           "surface-900": "rgb(var(--surface-900))",
           "surface-950": "rgb(var(--surface-950))",
+          'B':'#1e1e1e',
+          "G" : "#00dc82",
+          "y" : "#fffac3"
       },
   },
 
@@ -40,13 +43,6 @@ export default {
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
-      },
-    },
-    extend: {
-      colors: {
-        'B':'#1e1e1e',
-        "G" : "#00dc82",
-        "y" : "#fffac3"
       },
     },
   },

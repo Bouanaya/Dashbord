@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-[#d8e8f5] p-2 rounded-full">
+  <button class=" p-2 rounded-full" style="background-color: rgb(var(--primary-200));">
     <svg
       xmlns="http://www.w3.org/2000/svg"
      

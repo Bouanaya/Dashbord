@@ -1,13 +1,16 @@
 <template>
   <div class="w-20 bg-B h-screen flex justify-between flex-col py-8">
     <div class="flex flex-col gap-20">
-      <logo />
+      <router-link to="/">
+        <logo />
+      </router-link>
+   
 
       <div class="">
         <router-link to="/" v-slot="{ isActive }">
           <a>
             <BaseIconVue :is-active="isActive">
-              <Box />
+              <Box/>
             </BaseIconVue>
           </a>
         </router-link>
@@ -55,10 +58,4 @@ import BaseIconVue from "./BaseIcon.vue";
 </script>
 
 <style>
-.active {
-  /* Your styles for the active route */
-  color: red;
-  font-weight: bold;
-  background: red;
-}
 </style>

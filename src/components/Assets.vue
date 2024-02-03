@@ -17,7 +17,7 @@
                     <p class="font-medium">$204504</p>
                 </div>
                 <div class=" flex justify-between items-center">
-                    <div class="w-10 h-10 rounded-2xl bg-white flex justify-center items-center shadow-lg"><h1 class="text-xl font-bold">{{icon}}</h1></div>
+                    <div class="w-10 h-10 rounded-2xl bg-white flex justify-center items-center shadow-md "><h1 class="text-xl font-bold">{{icon}}</h1></div>
                     <h1>+0.14%</h1>
                 </div>
             </div>

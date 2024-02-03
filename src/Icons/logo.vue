@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-white p-3 rounded-xl  mx-4 ">
+  <button class="bg-white p-3 rounded-xl duration-500 hover:text-primary-50  mx-4 hover:bg-primary-500  ">
     <svg
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 24 24"
